@@ -3,7 +3,6 @@ node_modules/
 
 # Archivos de configuración de la base de datos
 .env
-config/database.js
 
 # Archivos de registros
 logs/*
