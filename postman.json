@@ -1,0 +1,74 @@
+{
+    "info": {
+      "name": "CRUD-API",
+      "description": "Postman Collection for CRUD API",
+      "version": "1.0.0"
+    },
+    "items": [
+      {
+        "name": "Productos",
+        "id": "f2437e08-7247-4559-99a6-577026792166",
+        "type": "folder",
+        "items": [
+          {
+            "name": "Crear Producto",
+            "id": "6066942c-7586-48c2-8b5a-946d873f2803",
+            "type": "request",
+            "method": "POST",
+            "url": "{{baseURL}}/productos",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"nombre\": \"Producto de Ejemplo\", \"precio\": 100.00, \"stock\": 50}"
+            }
+          },
+          {
+            "name": "Leer Producto",
+            "id": "a2619494-723d-478c-a721-688249578932",
+            "type": "request",
+            "method": "GET",
+            "url": "{{baseURL}}/productos/:id",
+            "path": {
+              "id": "1"
+            }
+          },
+          {
+            "name": "Actualizar Producto",
+            "id": "91393759-9876-4881-9c57-72717e667533",
+            "type": "request",
+            "method": "PUT",
+            "url": "{{baseURL}}/productos/:id",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "path": {
+              "id": "1"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\"nombre\": \"Producto Actualizado\", \"precio\": 120.00, \"stock\": 45}"
+            }
+          },
+          {
+            "name": "Eliminar Producto",
+            "id": "342615e5-02e0-4987-8420-292723523642",
+            "type": "request",
+            "method": "DELETE",
+            "url": "{{baseURL}}/productos/:id",
+            "path": {
+              "id": "1"
+            }
+          }
+        ]
+      }
+    ]
+  }
+  

@@ -1,0 +1,33 @@
+# Directorio de dependencias de Node.js
+node_modules/
+
+# Archivos de configuración de la base de datos
+.env
+config/database.js
+
+# Archivos de registros
+logs/*
+
+# Archivos temporales
+tmp/*
+
+# Archivos de caché
+cache/*
+
+# Archivos de prueba
+test/*
+
+# Archivos de cobertura de código
+coverage/*
+
+# Archivos IDE específicos
+*.idea/*
+.vscode/*
+
+# Archivos de configuración específicos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración específicos del editor de texto
+vimrc
+sublime.config
